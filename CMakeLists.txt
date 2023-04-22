@@ -24,7 +24,8 @@ SET(OPENCV_SRC_PATH "opencv3_src")
 SET(OPENCV_BUILD_PATH "opencv3_build")
 ExternalProject_Add(opencv3_src
   DEPENDS ${CONTRIB_NAME}
-  URL https://github.com/opencv/opencv/archive/3.4.2.zip
+  URL https://github.com/opencv/opencv/archive/refs/tags/3.4.2.zip
+  #URL http://192.168.0.24:8000/opencv-3.4.2.zip
   URL_MD5 9e9ebe9c1fe98c468f6e53f5c3c49716
   UPDATE_COMMAND ""
   SOURCE_DIR ${OPENCV_SRC_PATH}
